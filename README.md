@@ -1,26 +1,7 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+This is a based on the [Ionic](http://ionicframework.com/docs/) framework, as well as [Firebase](https://firebase.google.com/) for the database.
 
-## How to use this template
+## Basics
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+This system will allow a user to register, and then login to search for books to add to their list. Once a book is un the list, it can be selected for reasing. On the reading screen the user can start a timer to track the reading time. When done, clicking the stop button will stop the timer. At this time, the user can log the page in the book they are current at, and the progress information is stored in the database. 
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
-
-### With the Ionic CLI:
-
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
-
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myTabs tabs
-```
-
-Then, to run it, cd into `myTabs` and run:
-
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
-
-Substitute ios for android if not on a Mac.
-
+Reports can be generated from this data to show ave pages/min, pages/week, and a weekly reading activity log.
