@@ -1,17 +1,38 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>Reading Log</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
+  <h2>Welcome to Reading Log!</h2>
   <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
+    This too will let you track the books you are reading the time spent in each.
   </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6 (click)="readBook()">
+        <button ion-button full color="primary">
+          <ion-icon name="book"></ion-icon>&nbsp; Read Book
+        </button>
+      </ion-col>
+      <ion-col col-6 (click)="bookList()">
+        <button ion-button full color="primary">
+          <ion-icon name="list"></ion-icon>&nbsp; Book List
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6 (click)="searchBooks()">
+        <button ion-button full color="primary">
+          <ion-icon name="search"></ion-icon>&nbsp; Search
+        </button>
+      </ion-col>
+      <ion-col col-6 (click)="reportList()">
+        <button ion-button full color="primary">
+          <ion-icon name="document"></ion-icon>&nbsp; Reports
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
