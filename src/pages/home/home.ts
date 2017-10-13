@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
-
+import { BookListPage } from '../book-list/book-list';
+import { ReadBookPage } from '../read-book/read-book';
 
 @Component({
   selector: 'page-home',
@@ -15,9 +16,11 @@ export class HomePage {
   }
   readCurrentBook(){
     console.log('read book clicked');
+    this.navCtrl.push(ReadBookPage);
   }
   bookList(){
     console.log('book list clicked');
+    this.navCtrl.push(BookListPage);
   }
   searchBooks(){
     console.log('search books clicked');

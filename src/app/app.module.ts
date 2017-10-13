@@ -7,10 +7,11 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+import { BookListPage } from '../pages/book-list/book-list';
+import { ReadBookPage } from '../pages/read-book/read-book';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { BooklistProvider } from '../providers/booklist/booklist';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,9 @@ import { BooklistProvider } from '../providers/booklist/booklist';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    BookListPage,
+    ReadBookPage
   ],
   imports: [
     BrowserModule,
@@ -30,13 +33,14 @@ import { BooklistProvider } from '../providers/booklist/booklist';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    BookListPage,
+    ReadBookPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
-    BooklistProvider
+    {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
 export class AppModule {}

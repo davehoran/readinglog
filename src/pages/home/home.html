@@ -9,32 +9,10 @@
   <p>
     This too will let you track the books you are reading the time spent in each.
   </p>
-  <ion-grid>
-    <ion-row>
-      <ion-col col-6 (click)="readCurrentBook()">
-        <button ion-button full color="primary">
-          <ion-icon name="book"></ion-icon>&nbsp; Read Book
-        </button>
-      </ion-col>
-      <ion-col col-6 (click)="bookList()">
-        <button ion-button full color="primary">
-          <ion-icon name="list"></ion-icon>&nbsp; Book List
-        </button>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col col-6 (click)="searchBooks()">
-        <button ion-button full color="primary">
-          <ion-icon name="search"></ion-icon>&nbsp; Search
-        </button>
-      </ion-col>
-      <ion-col col-6 (click)="reportList()">
-        <button ion-button full color="primary">
-          <ion-icon name="document"></ion-icon>&nbsp; Reports
-        </button>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+
+  <button ion-button color="primary" full round (click)="bookList()">Book List</button>
+  <button ion-button color="primary" full round (click)="readCurrentBook()">Continue Reading</button>
+  <button ion-button color="primary" full round (click)="reportList()">Reports</button>
 
   <p id="stats">
     stats will go here.
