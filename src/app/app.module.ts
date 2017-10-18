@@ -9,8 +9,12 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { BookListPage } from '../pages/book-list/book-list';
 import { ReadBookPage } from '../pages/read-book/read-book';
+<<<<<<< HEAD
 import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
+=======
+import { ReportsPage } from '../pages/reports/reports';
+>>>>>>> 9ab7530af7f5d61cb25a4b412f38c812010198d1
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -24,8 +28,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TabsPage,
     BookListPage,
     ReadBookPage,
+<<<<<<< HEAD
     LoginPage,
     RegisterPage
+=======
+    ReportsPage
+>>>>>>> 9ab7530af7f5d61cb25a4b412f38c812010198d1
   ],
   imports: [
     BrowserModule,
@@ -40,8 +48,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TabsPage,
     BookListPage,
     ReadBookPage,
+<<<<<<< HEAD
     LoginPage,
     RegisterPage
+=======
+    ReportsPage
+>>>>>>> 9ab7530af7f5d61cb25a4b412f38c812010198d1
   ],
   providers: [
     StatusBar,

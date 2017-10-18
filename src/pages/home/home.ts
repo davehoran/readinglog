@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 
 import { BookListPage } from '../book-list/book-list';
 import { ReadBookPage } from '../read-book/read-book';
+import { ReportsPage } from '../reports/reports';
 
 @Component({
   selector: 'page-home',
@@ -27,5 +28,6 @@ export class HomePage {
   }
   reportList(){
     console.log('report list clicked');
+    this.navCtrl.push(ReportsPage);
   }
 }
